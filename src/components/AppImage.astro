@@ -1,0 +1,106 @@
+---
+import { Image } from 'astro:assets';
+import { Picture } from 'astro:assets';
+import '@fontsource-variable/open-sans';
+---
+
+<div class='container'>
+  <Picture
+    src={'/images/screen-mockups.svg'}
+    alt={'Screen mockups'}
+    formats={['svg', 'webp']}
+    width={732}
+    height={523}
+  />
+  <div class='flex flex-stats'>
+    <div class='flex'>
+      <div class='start'>
+        <Picture
+          src={'/images/icon-communities.svg'}
+          formats={['svg', 'webp']}
+          alt={''}
+          width={50}
+          height={50}
+        />
+      </div>
+      <p class='title'>1.4k+</p>
+      <p class='info'>Communities Formed</p>
+    </div>
+    <div class='flex'>
+      <div class='start start-message'>
+        <Picture
+          src={'/images/icon-messages.svg'}
+          formats={['svg', 'webp']}
+          alt={''}
+          width={50}
+          height={50}
+        />
+      </div>
+      <p class='title'>2.7m+</p>
+      <p class='info message'>Messages Sent</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .container {
+    margin-block: 8rem;
+    text-align: center;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-stats {
+    gap: 6rem;
+    margin-top: 6rem;
+  }
+
+  .start {
+    align-self: start;
+  }
+
+  .start-message {
+    padding-left: 0.7rem;
+  }
+
+  .title {
+    font-family: 'Open Sans Variable', sans-serif;
+    color: var(--clr-d-cyan);
+    font-size: 4.5rem;
+    font-weight: 700;
+  }
+
+  .info {
+    font-family: 'Open Sans Variable', sans-serif;
+    font-weight: 600;
+    color: gray;
+  }
+
+  .message {
+    width: 50%;
+    margin-inline: auto;
+  }
+
+  @media (min-width: 650px) {
+    .container {
+      width: 90%;
+      margin-inline: auto;
+    }
+
+    .flex-stats {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-inline: 12rem;
+    }
+
+    .message {
+      width: 100%;
+    }
+  }
+</style>
