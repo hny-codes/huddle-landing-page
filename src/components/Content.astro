@@ -1,0 +1,112 @@
+---
+import '@fontsource-variable/open-sans';
+import { Picture } from 'astro:assets';
+---
+
+<section>
+  <div class='item'>
+    <Picture
+      src={'/images/illustration-grow-together.svg'}
+      alt={''}
+      width={1023.46}
+      height={837.84}
+    />
+    <div class='reverse'>
+      <h2 class='title'>Grow Together</h2>
+      <p class='content reverse'>
+        Generate meaningful discussions with your audience and build a strong,
+        loyal community. Think of the insightful conversations you miss out on
+        with a feedback form.
+      </p>
+    </div>
+  </div>
+  <div class='item'>
+    <Picture
+      src={'/images/illustration-flowing-conversation.svg'}
+      alt={''}
+      width={1023.46}
+      height={837.84}
+    />
+    <div>
+      <h2 class='title'>Flowing Conversations</h2>
+      <p class='content'>
+        You wouldn't paginate a conversation in real life, so why do it online?
+        Our threads have just-in-time loading for a more natural flow.
+      </p>
+    </div>
+  </div>
+  <div class='item'>
+    <Picture
+      src={'/images/illustration-your-users.svg'}
+      alt={''}
+      width={1023.46}
+      height={837.84}
+    />
+    <div class='reverse'>
+      <h2 class='title'>Your Users</h2>
+      <p class='content'>
+        It takes no time at all to integrate Huddle with your app's
+        authentication solution. This means, once signed in to your app, your
+        users can start chatting immediately.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    text-align: center;
+    color: var(--clr-d-cyan);
+
+    display: flex;
+    flex-direction: column;
+    gap: 16rem;
+    padding-top: 6rem;
+  }
+
+  img {
+    width: 80%;
+  }
+
+  .title,
+  .content {
+    font-family: 'Open Sans Variable', sans-serif;
+  }
+
+  .title {
+    font-weight: 700;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+  }
+
+  .content {
+    font-weight: 600;
+    line-height: 1.5rem;
+  }
+
+  @media (min-width: 650px) {
+    section {
+      text-align: left;
+    }
+
+    .item {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      gap: 8rem;
+    }
+
+    .title {
+      font-size: 2.5rem;
+    }
+
+    .content {
+      padding-right: 5rem;
+      padding-bottom: 6rem;
+    }
+
+    .reverse {
+      order: -1;
+    }
+  }
+</style>
