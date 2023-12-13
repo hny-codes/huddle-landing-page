@@ -1,0 +1,43 @@
+---
+import RoundBtn from "./RoundBtn.astro";
+import { Image } from "astro:assets";
+---
+
+<header>
+  <nav class="flex container">
+    <a href="/">
+      <Image
+        src={'/images/logo.svg'}
+        alt={'Huddle Logo'} 
+        width={152}
+        height={25}
+        decoding={"async"}
+        loading={"lazy"}
+      />
+    </a>
+    <RoundBtn text={'Try It Free'} />
+  </nav>
+</header>
+
+<style>
+  nav {
+    padding: 2rem 2rem;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    cursor: pointer;
+  }
+
+  @media (min-width: 650px) {
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+  }
+</style>
