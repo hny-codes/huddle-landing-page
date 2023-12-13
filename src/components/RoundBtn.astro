@@ -1,0 +1,43 @@
+---
+import '@fontsource-variable/open-sans';
+
+const { text, variant = 'transparent' } = Astro.props;
+---
+
+<button class={`${variant === 'transparent' ? 'transparent' : 'filled'}`}>
+  {text}
+</button>
+
+<style>
+  .transparent {
+    font-family: 'Open Sans Variable', sans-serif;
+    color: var(--clr-pink);
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: transparent;
+    padding: 0.5em 2em;
+    border: 1px solid var(--clr-pink);
+    border-radius: 50px;
+  }
+
+  .transparent:hover {
+    color: var(--clr-l-pink);
+    border-color: var(--clr-l-pink);
+  }
+
+  .filled {
+    font-family: 'Open Sans Variable', sans-serif;
+    color: var(--clr-d-paleblue);
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: var(--clr-pink);
+    padding: 0.5em 2em;
+    border: 1px solid var(--clr-pink);
+    border-radius: 50px;
+  }
+
+  .filled:hover {
+    background-color: var(--clr-l-pink);
+    border-color: var(--clr-l-pink);
+  }
+</style>
