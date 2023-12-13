@@ -1,0 +1,49 @@
+---
+import '@fontsource/poppins/700.css'
+import '@fontsource-variable/open-sans'
+import RoundBtn from './RoundBtn.astro';
+---
+
+<div class="container">
+  <h1>Build the community your fans will love</h1>
+  <p>Huddle re-imagines the why we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+  <RoundBtn text={'Get Started For Free'} variant="filled" />
+</div>
+
+<style>
+  h1 {
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    color: var(--clr-d-cyan);
+    font-weight: 700;
+    font-size: 2rem;
+
+    padding-bottom: 2rem;
+  }
+
+  p {
+    color: var(--clr-d-cyan);
+    font-family: 'Open Sans Variable', sans-serif;
+    font-weight: 600;
+    width: 90%;
+    margin-inline: auto;
+    line-height: 1.7rem;
+
+    padding-bottom: 4rem;
+  }
+
+  .container {
+    margin-top: 7rem;
+    text-align: center;
+  }
+
+  @media (min-width: 650px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    p {
+      width: 37%;
+    }
+  }
+</style>

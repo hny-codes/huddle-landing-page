@@ -1,8 +1,20 @@
 ---
 import BaseLayout from "../layout/BaseLayout.astro";
 import Navbar from '../components/Navbar.astro';
+import Hero from "../components/Hero.astro";
 ---
 
 <BaseLayout>
 	<Navbar />
+	<main>
+		<Hero />
+	</main>
 </BaseLayout>
+
+<style>
+	main {
+		padding-inline: 2rem;
+		max-width: var(--max-width);
+		margin-inline: auto;
+	}
+</style>

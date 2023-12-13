@@ -31,7 +31,7 @@ const { text, variant = 'transparent' } = Astro.props;
     font-size: 1rem;
     font-weight: 700;
     background-color: var(--clr-pink);
-    padding: 0.5em 2em;
+    padding: 1em 3.5em;
     border: 1px solid var(--clr-pink);
     border-radius: 50px;
   }
@@ -39,5 +39,11 @@ const { text, variant = 'transparent' } = Astro.props;
   .filled:hover {
     background-color: var(--clr-l-pink);
     border-color: var(--clr-l-pink);
+  }
+
+  @media (min-width: 650px) {
+    .filled {
+      font-size: 1.3rem;
+    }
   }
 </style>
