@@ -19,3 +19,11 @@
   --clr-d-cyan: hsl(192, 100%, 9%);
   --clr-d-paleblue: hsl(207, 100%, 98%);
 }
+
+button {
+  /* CSS Reset + Pointer cursor */
+  border: none;
+  background-color: transparent;
+  color: none;
+  cursor: pointer;
+}
