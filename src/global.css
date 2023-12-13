@@ -3,3 +3,19 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  /* Layout */
+  --max-width: 1440px;
+
+  /* COLORS */
+
+  /* Primary */
+  --clr-pink: hsl(322, 100%, 66%);
+  --clr-l-pink: hsl(321, 100%, 78%);
+  --clr-l-red: hsl(0, 100%, 63%);
+
+  /* Neutral */
+  --clr-d-cyan: hsl(192, 100%, 9%);
+  --clr-d-paleblue: hsl(207, 100%, 98%);
+}
