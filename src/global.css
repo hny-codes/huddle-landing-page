@@ -27,3 +27,9 @@ button {
   color: none;
   cursor: pointer;
 }
+
+/* Responsive images */
+img {
+  width: 100%;
+  height: auto;
+}
