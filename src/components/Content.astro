@@ -1,10 +1,25 @@
 ---
 import '@fontsource-variable/open-sans';
 import { Picture } from 'astro:assets';
+import { Image } from 'astro:assets';
 ---
 
 <section>
   <div class='bg'>
+    <Image
+      src={'/images/bg-section-top-mobile-1.svg'}
+      alt={''}
+      width={100}
+      height={100}
+      class='divide-top'
+    />
+    <Image
+      src={'/images/bg-section-top-desktop-1.svg'}
+      alt={''}
+      width={100}
+      height={100}
+      class='divide-top-desktop'
+    />
     <div class='item main-container'>
       <Picture
         src={'/images/illustration-grow-together.svg'}
@@ -21,6 +36,20 @@ import { Picture } from 'astro:assets';
         </p>
       </div>
     </div>
+    <Image
+      src={'/images/bg-section-bottom-mobile-1.svg'}
+      alt={''}
+      width={100}
+      height={100}
+      class='divide-bottom'
+    />
+    <Image
+      src={'/images/bg-section-bottom-desktop-1.svg'}
+      alt={''}
+      width={100}
+      height={100}
+      class='divide-bottom-desktop'
+    />
   </div>
   <div class='item main-container'>
     <Picture
@@ -38,6 +67,20 @@ import { Picture } from 'astro:assets';
     </div>
   </div>
   <div class='bg'>
+    <Image
+      src={'/images/bg-section-top-mobile-2.svg'}
+      alt={''}
+      width={100}
+      height={100}
+      class='divide-top'
+    />
+    <Image
+      src={'/images/bg-section-top-desktop-2.svg'}
+      alt={''}
+      width={100}
+      height={100}
+      class='divide-top-desktop'
+    />
     <div class='item main-container'>
       <Picture
         src={'/images/illustration-your-users.svg'}
@@ -54,6 +97,20 @@ import { Picture } from 'astro:assets';
         </p>
       </div>
     </div>
+    <Image
+      src={'/images/bg-section-bottom-mobile-2.svg'}
+      alt={''}
+      width={100}
+      height={100}
+      class='divide-bottom-together'
+    />
+    <Image
+      src={'/images/bg-section-bottom-desktop-2.svg'}
+      alt={''}
+      width={100}
+      height={100}
+      class='divide-bottom-together-desktop'
+    />
   </div>
 </section>
 
@@ -66,6 +123,7 @@ import { Picture } from 'astro:assets';
     flex-direction: column;
     gap: 16rem;
     padding-top: 6rem;
+    margin-bottom: 20rem;
   }
 
   img {
@@ -91,7 +149,53 @@ import { Picture } from 'astro:assets';
   /* Bg container */
   .bg {
     background-color: var(--clr-d-paleblue);
+    padding-block: 4rem;
+    position: relative;
   }
+
+  .divide-top {
+    position: absolute;
+    width: 100%;
+    top: -6rem;
+    left: 0;
+  }
+
+  .divide-top-desktop {
+    position: absolute;
+    width: 100%;
+    top: -10rem;
+    left: 0;
+    display: none;
+  }
+
+  .divide-bottom {
+    position: absolute;
+    width: 100%;
+    bottom: -3rem;
+    left: 0;
+  }
+  .divide-bottom-together {
+    position: absolute;
+    width: 100%;
+    bottom: -7rem;
+    left: 0;
+  }
+
+  .divide-bottom-desktop {
+    position: absolute;
+    width: 100%;
+    bottom: -8rem;
+    left: 0;
+    display: none;
+  }
+  .divide-bottom-together-desktop {
+    position: absolute;
+    width: 100%;
+    bottom: -8rem;
+    left: 0;
+    display: none;
+  }
+
   @media (min-width: 650px) {
     section {
       text-align: left;
@@ -115,6 +219,48 @@ import { Picture } from 'astro:assets';
 
     .reverse {
       order: -1;
+    }
+
+    .divide-top {
+      display: none;
+    }
+
+    .divide-top-desktop {
+      display: block;
+    }
+
+    .divide-bottom {
+      display: none;
+    }
+
+    .divide-bottom-desktop {
+      display: block;
+    }
+
+    .divide-bottom-together {
+      display: none;
+    }
+
+    .divide-bottom-together-desktop {
+      display: block;
+    }
+  }
+
+  @media (min-width: 405px) {
+    .divide-top {
+      top: -7rem;
+    }
+  }
+
+  @media (min-width: 490px) {
+    .divide-top {
+      top: -9rem;
+    }
+  }
+
+  @media (min-width: 565px) {
+    .divide-top {
+      top: -10rem;
     }
   }
 </style>
