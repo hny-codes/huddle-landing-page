@@ -1,0 +1,41 @@
+---
+import RoundBtn from './RoundBtn.astro';
+import '@fontsource-variable/open-sans';
+---
+
+<section>
+  <div class='container'>
+    <h2>Ready to build your community?</h2>
+    <RoundBtn text={'Get Started For Free'} variant='filled' />
+  </div>
+</section>
+
+<style>
+  section {
+    margin-bottom: 16rem;
+  }
+  h2 {
+    text-transform: capitalize;
+    font-family: 'Open Sans Variable', sans-serif;
+    font-size: 2rem;
+    color: var(--clr-d-cyan);
+
+    width: 80%;
+    margin-inline: auto;
+
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 4rem;
+  }
+
+  @media (min-width: 650px) {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+</style>
