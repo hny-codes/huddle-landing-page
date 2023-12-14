@@ -4,23 +4,25 @@ import { Picture } from 'astro:assets';
 ---
 
 <section>
-  <div class='item'>
-    <Picture
-      src={'/images/illustration-grow-together.svg'}
-      alt={''}
-      width={1023.46}
-      height={837.84}
-    />
-    <div class='reverse'>
-      <h2 class='title'>Grow Together</h2>
-      <p class='content reverse'>
-        Generate meaningful discussions with your audience and build a strong,
-        loyal community. Think of the insightful conversations you miss out on
-        with a feedback form.
-      </p>
+  <div class='bg'>
+    <div class='item main-container'>
+      <Picture
+        src={'/images/illustration-grow-together.svg'}
+        alt={''}
+        width={1023.46}
+        height={837.84}
+      />
+      <div class='reverse'>
+        <h2 class='title'>Grow Together</h2>
+        <p class='content reverse'>
+          Generate meaningful discussions with your audience and build a strong,
+          loyal community. Think of the insightful conversations you miss out on
+          with a feedback form.
+        </p>
+      </div>
     </div>
   </div>
-  <div class='item'>
+  <div class='item main-container'>
     <Picture
       src={'/images/illustration-flowing-conversation.svg'}
       alt={''}
@@ -35,20 +37,22 @@ import { Picture } from 'astro:assets';
       </p>
     </div>
   </div>
-  <div class='item'>
-    <Picture
-      src={'/images/illustration-your-users.svg'}
-      alt={''}
-      width={1023.46}
-      height={837.84}
-    />
-    <div class='reverse'>
-      <h2 class='title'>Your Users</h2>
-      <p class='content'>
-        It takes no time at all to integrate Huddle with your app's
-        authentication solution. This means, once signed in to your app, your
-        users can start chatting immediately.
-      </p>
+  <div class='bg'>
+    <div class='item main-container'>
+      <Picture
+        src={'/images/illustration-your-users.svg'}
+        alt={''}
+        width={1023.46}
+        height={837.84}
+      />
+      <div class='reverse'>
+        <h2 class='title'>Your Users</h2>
+        <p class='content'>
+          It takes no time at all to integrate Huddle with your app's
+          authentication solution. This means, once signed in to your app, your
+          users can start chatting immediately.
+        </p>
+      </div>
     </div>
   </div>
 </section>
@@ -84,6 +88,10 @@ import { Picture } from 'astro:assets';
     line-height: 1.5rem;
   }
 
+  /* Bg container */
+  .bg {
+    background-color: var(--clr-d-paleblue);
+  }
   @media (min-width: 650px) {
     section {
       text-align: left;
