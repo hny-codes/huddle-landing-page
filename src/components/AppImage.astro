@@ -89,18 +89,24 @@ import '@fontsource-variable/open-sans';
 
   @media (min-width: 650px) {
     .container {
-      width: 90%;
+      width: 80%;
       margin-inline: auto;
     }
 
     .flex-stats {
       flex-direction: row;
-      justify-content: space-between;
-      padding-inline: 12rem;
+      justify-content: space-evenly;
+      gap: 4rem;
     }
 
     .message {
       width: 100%;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .flex-stats {
+      gap: 20rem;
     }
   }
 </style>
