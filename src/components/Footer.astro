@@ -295,14 +295,17 @@ import { Image } from 'astro:assets';
       font-size: 1.8rem;
     }
 
-    .newsletter > p {
-      width: 55%;
-    }
-
     .details-text {
       width: 60%;
     }
+  }
 
+  @media (min-width: 850px) {
+    /* Newsletter Text Section */
+    .newsletter > p {
+      width: 55%;
+    }
+    
     /* Form Section */
     form {
       flex-direction: row;
