@@ -156,13 +156,15 @@ import { Image } from 'astro:assets';
   .divide-top {
     position: absolute;
     width: 100%;
-    top: -6rem;
+    height: 112px;
+    top: -7rem;
     left: 0;
   }
 
   .divide-top-desktop {
     position: absolute;
     width: 100%;
+    height: 165px;
     top: -10rem;
     left: 0;
     display: none;
@@ -171,27 +173,31 @@ import { Image } from 'astro:assets';
   .divide-bottom {
     position: absolute;
     width: 100%;
+    height: 52px;
     bottom: -3rem;
     left: 0;
   }
   .divide-bottom-together {
     position: absolute;
     width: 100%;
-    bottom: -7rem;
+    height: 101px;
+    bottom: -6rem;
     left: 0;
   }
 
   .divide-bottom-desktop {
     position: absolute;
     width: 100%;
-    bottom: -8rem;
+    height: 139px;
+    bottom: -8.5rem;
     left: 0;
     display: none;
   }
   .divide-bottom-together-desktop {
     position: absolute;
     width: 100%;
-    bottom: -8rem;
+    height: 139px;
+    bottom: -8.5rem;
     left: 0;
     display: none;
   }
@@ -243,24 +249,6 @@ import { Image } from 'astro:assets';
 
     .divide-bottom-together-desktop {
       display: block;
-    }
-  }
-
-  @media (min-width: 405px) {
-    .divide-top {
-      top: -7rem;
-    }
-  }
-
-  @media (min-width: 490px) {
-    .divide-top {
-      top: -9rem;
-    }
-  }
-
-  @media (min-width: 565px) {
-    .divide-top {
-      top: -10rem;
     }
   }
 </style>
