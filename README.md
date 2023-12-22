@@ -27,6 +27,7 @@ Users should be able to:
 ## Built with
 
 - Vanilla JavaScript
+- HTML
 - CSS
 - Astro
 
